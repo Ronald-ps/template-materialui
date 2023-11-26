@@ -124,7 +124,7 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
             </Grid>
             <Grid item xs={3}>
               <FormControl fullWidth>
-                <InputLabel htmlFor="tarefa_recurso">Status</InputLabel>
+                <InputLabel htmlFor="tarefa_status">Status</InputLabel>
                 <Select
                   id="tarefa_status"
                   value={statusTarefa}
