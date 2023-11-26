@@ -122,10 +122,10 @@ const ListarTarefa = () => {
                       <TableCell align="left">{row.statusTarefa}</TableCell>
                       <TableCell align="left">{row.recursoTarefa}</TableCell>
                       <TableCell align="center">
-                        <Button disableElevation variant="contained" color="success" onClick={() => handleEditar(row.idTarefa)}><EditIcon fontSize="small" /></Button>
+                        <Button disableElevation variant="outlined" color="success" onClick={() => handleEditar(row.idTarefa)}><EditIcon fontSize="small" /></Button>
                       </TableCell>
                       <TableCell align="left">
-                        <Button variant="contained" disableElevation color="error" onClick={() => handleDeletar(row.idTarefa)}><DeleteIcon fontSize="small" /></Button>
+                        <Button variant="outlined" disableElevation color="error" onClick={() => handleDeletar(row.idTarefa)}><DeleteIcon fontSize="small" /></Button>
                       </TableCell>
                     </TableRow>
                 ))}
@@ -134,8 +134,8 @@ const ListarTarefa = () => {
             </TableContainer>
         </CardContent>
         <CardActions>
-            <Button size="small" variant="contained" color="success" onClick={handleOpen}>Criar Tarefa</Button>
-            <Button size="small" variant="contained" color="error">Cancelar</Button>
+            <Button disableElevation size="small" variant="outlined" color="success" onClick={handleOpen}>Criar Tarefa</Button>
+            <Button disableElevation size="small" variant="outlined" color="error">Cancelar</Button>
       </CardActions>
     </Card>
     <div>
