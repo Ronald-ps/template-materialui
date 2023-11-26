@@ -95,11 +95,11 @@ const ListarTarefa = () => {
                 <TableRow>
                     <TableCell>#</TableCell>
                     <TableCell>Título</TableCell>
-                    <TableCell align="right">Descrição</TableCell>
-                    <TableCell align="right">Data de Início</TableCell>
-                    <TableCell align="right">Data de Finalização</TableCell>
-                    <TableCell align="right">Status</TableCell>
-                    <TableCell align="right">Recurso</TableCell>
+                    <TableCell align="left">Descrição</TableCell>
+                    <TableCell align="left">Data de Início</TableCell>
+                    <TableCell align="left">Data de Finalização</TableCell>
+                    <TableCell align="left">Status</TableCell>
+                    <TableCell align="left">Recurso</TableCell>
                     <TableCell align="left"></TableCell>
                     <TableCell align="left"></TableCell>
                 </TableRow>
@@ -116,11 +116,11 @@ const ListarTarefa = () => {
                       <TableCell component="th" scope="row">
                           {row.tituloTarefa}
                       </TableCell>
-                      <TableCell align="right">{row.descricaoTarefa}</TableCell>
-                      <TableCell align="right">{row.inicioTarefa}</TableCell>
-                      <TableCell align="right">{row.fimTarefa}</TableCell>
-                      <TableCell align="right">{row.statusTarefa}</TableCell>
-                      <TableCell align="right">{row.recursoTarefa}</TableCell>
+                      <TableCell align="left">{row.descricaoTarefa}</TableCell>
+                      <TableCell align="left">{row.inicioTarefa}</TableCell>
+                      <TableCell align="left">{row.fimTarefa}</TableCell>
+                      <TableCell align="left">{row.statusTarefa}</TableCell>
+                      <TableCell align="left">{row.recursoTarefa}</TableCell>
                       <TableCell align="center">
                         <Button disableElevation variant="contained" color="success" onClick={() => handleEditar(row.idTarefa)}><EditIcon fontSize="small" /></Button>
                       </TableCell>
