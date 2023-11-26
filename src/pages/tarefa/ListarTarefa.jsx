@@ -104,7 +104,7 @@ const ListarTarefa = () => {
                     <TableCell align="left"></TableCell>
                 </TableRow>
                 </TableHead>
-                <TableBody>
+                <TableBody sx={{opacity: "0.8"}}>
                 {tarefas.map((row, indice) => (
                     <TableRow
                     key={indice}
